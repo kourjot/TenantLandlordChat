@@ -91,13 +91,15 @@ body {
 
 #messages {
   flex: 3;
-  overflow-y: auto;
+  overflow-y: auto; /* Make this area scrollable */
   margin-top: 20px;
+  max-height: 60%; /* Ensuring it doesn't take more than 60% of the container's height */
 }
 
 #message-list {
   list-style-type: none;
   padding: 10px;
+  margin: 0;
 }
 
 #message-list li {
