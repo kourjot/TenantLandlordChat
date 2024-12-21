@@ -27,7 +27,6 @@ io.on("connection",(socket)=>{
                 io.emit('update-users', Object.values(users)); 
                 console.log(`${username} disconnected.`);
         });
-
 })
 server.listen(2121, () => {
     console.log('Server running at http://localhost:2121');
